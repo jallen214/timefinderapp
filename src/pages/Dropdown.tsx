@@ -7,7 +7,7 @@ const Dropdown = ({ options, value, onChange }) => {
     setIsOpen(!isOpen);
   };
 
-  const handleSelectOption = (selectedValue) => {
+  const handleSelectOption = (selectedValue: any) => {
     onChange(selectedValue);
     setIsOpen(false);
   };

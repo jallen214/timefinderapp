@@ -15,12 +15,7 @@ const StartScreen: React.FC = () => {
       <p className="text-lg mb-4">
         Where finding the right time for the right task is done for you.
       </p>
-<<<<<<< HEAD
-      {/* MAke sure to put a src in the imgae tag before alt, should be the time finder logo image link */}
-      <img alt="TimeFinder Image" className="w-64 h-auto mb-4" />
-=======
-      <img src="/TimeFinderImage.jpg" alt="TimeFinder Image" className="w-64 h-auto mb-4" />
->>>>>>> d72b69dfdea8122876cf3971fa0a5d7af83d2615
+      <img src="src/images/TimeFinderImage.jpg" alt="TimeFinder Image" className="w-64 h-auto mb-4" />
       <p className="text-lg mb-4">
         Time Finder helps you schedule your tasks to get them done by matching open times to your productivity and peak concentration increasing your success!
       </p>
@@ -38,4 +33,3 @@ const StartScreen: React.FC = () => {
 };
 
 export default StartScreen;
-

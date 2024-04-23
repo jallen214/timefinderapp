@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
-import Dropdown from './Dropdown'; // Import your Dropdown component
+import  { useState } from 'react';
+import Dropdown from './Dropdown'; 
+import { Link } from 'react-router-dom';
 
 const TaskScreen = () => {
   // State for task details
@@ -16,6 +17,7 @@ const TaskScreen = () => {
   
   return (
     <div className="container mx-auto p-4">
+       <img src="/src/images/Progress Bar 1.png" alt="Progress Bar 1" className="mx-auto mb-8" />
       <h1 className="text-4xl font-bold">Time Finder</h1>
       <p className="text-lg text-gray-600 mb-4">Please create 3 tasks and see how quick it is with TimeFinder.</p> 
 
@@ -30,7 +32,7 @@ const TaskScreen = () => {
               id={`taskName${index}`}
               value={task.name}
               onChange={(e) => handleTaskInputChange(index, 'name', e.target.value)}
-              placeholder="e.g. walk the dog" // Placeholder for Task Name
+              placeholder="e.g. walk the dog" 
               className="border border-gray-300 rounded px-4 py-2 mt-1 focus:outline-none focus:border-blue-500"
             />
           </div>
@@ -79,7 +81,9 @@ const TaskScreen = () => {
         </div>
       ))}
        {/* Next button */}
-       <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 block mx-auto">Next</button>
+      <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 block mx-auto">
+       <Link to="/google-calendar-integration">Next</Link>
+      </button>
     </div>
   );
 };
