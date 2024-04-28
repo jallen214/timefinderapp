@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const ConcentrationSelector = () => {
   const [selectedConcentration, setSelectedConcentration] = useState('');
@@ -40,6 +41,7 @@ const ConcentrationSelector = () => {
       </div>
 
       {/* Button */}
+      <Link to="/schedule-page">
       <button
         className={`bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full block mx-auto ${selectedConcentration ? '' : 'opacity-50 cursor-not-allowed'}`}
         onClick={handleScheduleClick}
@@ -47,6 +49,7 @@ const ConcentrationSelector = () => {
       >
         Schedule my tasks for tomorrow
       </button>
+      </Link>
     </div>
   );
 };

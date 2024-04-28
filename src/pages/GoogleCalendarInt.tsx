@@ -12,7 +12,7 @@ const GoogleCalendarIntegrationButton = () => {
     } catch (error) {
       console.error('Error integrating with Google Calendar:', error);
       // Handle error if needed
-    }
+    } 
   };
 
   return (
